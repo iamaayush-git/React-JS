@@ -106,15 +106,25 @@ body {
 }
 #temperatureText{
 	font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #feelsLikeText{
 	font-size: 4vw;
+  margin-top: 5vh;
 }
 .tempandFeel{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+.error{
+  /* font-size: 2vw; */
+  font-size: 30px;
+  color: rgb(239, 76, 76);
+  /* background-color: white; */
 }
 @media (max-width: 460px) {
   .footer {

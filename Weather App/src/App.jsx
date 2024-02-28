@@ -10,6 +10,7 @@ function App() {
   const [feelsLike, setFeelslike] = useState("");
   const [humidity_s, setHumidity_s] = useState("");
   const [wind_s, setWind_s] = useState("");
+  const [errormessage, seterrorMessage] = useState(false);
   function valueInput(e) {
     setCityname(e.target.value);
   }
@@ -22,11 +23,22 @@ function App() {
           return data.json();
         })
         .then((data) => {
-          setTemperature(data.main.temp);
-          setWind_s(data.wind.speed);
-          setHumidity_s(data.main.humidity);
-          setFeelslike(data.main.feels_like);
-          setCityname("");
+          console.log(data.cod);
+          if (data.cod == "404") {
+            setTemperature("");
+            setWind_s("");
+            setHumidity_s("");
+            setFeelslike("");
+            setCityname("");
+            seterrorMessage(true);
+          } else {
+            setTemperature(data.main.temp);
+            setWind_s(data.wind.speed);
+            setHumidity_s(data.main.humidity);
+            setFeelslike(data.main.feels_like);
+            seterrorMessage(false);
+            setCityname("");
+          }
         });
     }
   }
@@ -52,7 +64,13 @@ function App() {
         </div>
         <div className="tempandFeel">
           <div className="temperature">
-            <h1 id="temperatureText">{temperature}</h1>
+            <h1 id="temperatureText">
+              {errormessage == true ? (
+                <span className="error">Data not found</span>
+              ) : (
+                <span>{temperature}</span>
+              )}
+            </h1>
             <h3>Temperature</h3>
           </div>
           <div className="feelsLike">

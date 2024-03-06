@@ -1,0 +1,12 @@
+.btn{
+    padding: 2vh 1.5vw;
+    display: flex;
+    gap: .5vw;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

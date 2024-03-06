@@ -1,0 +1,14 @@
+.heading{
+    font-size: 5vw;
+}
+.contactContainer{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+}
+.para{
+    width: 80%;
+    text-align: left;
+    font-weight: 400;
+}

@@ -1,7 +1,6 @@
 import styles from "./ContactHeader.module.css";
 
 function ContactHeader() {
-  console.log(styles);
   return (
     <>
       <div className={styles.contactContainer}>

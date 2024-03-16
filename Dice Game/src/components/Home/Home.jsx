@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-function Home() {
+function Home({setIsGamePlay}) {
+function toggle(){
+  setIsGamePlay((prev)=>!prev);
+}
   return (
     <>
       <Main>
@@ -9,7 +12,7 @@ function Home() {
         </First>
         <Second>
           <h2>DICE GAME</h2>
-          <Button>Play Now</Button>
+          <Button onClick={toggle}>Play Now</Button>
         </Second>
       </Main>
     </>

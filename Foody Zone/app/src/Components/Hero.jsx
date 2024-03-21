@@ -1,29 +1,12 @@
 import styled from "styled-components";
-import data from "./data";
-import { useEffect } from "react";
-import { useState } from "react";
-// import hello from ''
-function Hero() {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    fetch("http://localhost:9000/")
-      .then((data) => data.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+import Card from "./Card";
+function Hero({filterdata}) {
+  console.log(filterdata);
   return (
     <Main>
       <div className="cards">
-        {data?.map((value, i) => (
-          <div className="card">
-            <img src={`http://localhost:9000${value.image}`} alt="" />
-            <div className="paraAndBtn">
-              <h2>{value.name}</h2>
-              <button>{"$ "+value.price.toFixed(2)}</button>
-            </div>
-          </div>
+        {filterdata?.map((value, i) => (
+          <Card value={value} key={i}/>
         ))}
       </div>
     </Main>
@@ -32,6 +15,7 @@ function Hero() {
 export default Hero;
 
 const Main = styled.div`
+height: 100vh;
   width: 100vw;
   margin-top: -5px;
   background-image: url("/public/bg.png");

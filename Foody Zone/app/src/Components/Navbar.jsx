@@ -1,11 +1,17 @@
+import { useState } from "react";
 import styled from "styled-components";
 
-function Navbar() {
+function Navbar({searchFood }) {
+ 
   return (
     <Main>
       <div className="imgAndInp">
         <img src="../public/FoodyZone.png" alt="imgnotfound" />
-        <input type="text" placeholder="Search food here" />
+        <input
+          onChange={searchFood}
+          type="text"
+          placeholder="Search food here"
+        />
       </div>
       <Buttons>
         <button className="firstbtn">All</button>
@@ -27,7 +33,7 @@ const Main = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-right: 5vw;
-    input{
+    input {
       background-color: black;
       color: white;
       border: none;

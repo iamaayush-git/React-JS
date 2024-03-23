@@ -1,8 +1,21 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-function Navbar({searchFood }) {
- 
+function Navbar({ searchFood,setfilterData,data}) {
+  const [btnSelect, setbtnSelect] = useState(0);
+  function foodOptions(e, i) {
+   setbtnSelect(i);
+  //  setType(e.target.innerText);
+   setfilterData(
+    data.filter((value)=>{
+      return value.type.toLowerCase().includes(e.target.innerText.toLowerCase());
+    })
+   )
+   if(e.target.innerText == "All"){
+    setfilterData(data);
+   }
+  }
+  let btnData = ["All", "Breakfast", "Lunch", "Dinner"];
   return (
     <Main>
       <div className="imgAndInp">
@@ -14,10 +27,15 @@ function Navbar({searchFood }) {
         />
       </div>
       <Buttons>
-        <button className="firstbtn">All</button>
-        <button>Breakfast</button>
-        <button>Launch</button>
-        <button>Dinner</button>
+        {btnData.map((value, i) => (
+          <button
+          className={btnSelect == i?"selectedBtn":"unselectedBtn"}
+            onClick={(e) => foodOptions(e,i)}
+            key={value}
+          >
+            {value}
+          </button>
+        ))}
       </Buttons>
     </Main>
   );
@@ -65,8 +83,8 @@ const Buttons = styled.button`
   gap: 1vw;
   padding-right: 3vw;
   padding-bottom: 2vh;
-  button {
-    background-color: #f63939;
+  .unselectedBtn {
+    background-color:#f63939;
     border: none;
     outline: none;
     font-size: 1.6vw;
@@ -76,6 +94,24 @@ const Buttons = styled.button`
     border-radius: 10px;
     cursor: pointer;
     font-weight: 700;
+    transition: 0.2s linear;
+    &:hover{
+      background-color: #232331;
+      color: white;
+    }
+  }
+  .selectedBtn {
+    background-color: #575555;
+    border: none;
+    outline: none;
+    font-size: 1.6vw;
+    padding: 1vh 1vw;
+    font-size: 1.5vw;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.2s linear;
   }
   .firstbtn {
     width: 6vw;

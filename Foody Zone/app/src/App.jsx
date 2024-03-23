@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 const App = () => {
   const [data, setData] = useState();
-  const [searchedData, setSearchedData] = useState();
   const [filterdata, setfilterData] = useState();
 
   useEffect(() => {
@@ -17,10 +16,8 @@ const App = () => {
       });
   }, []);
   function searchFood(e) {
-    console.log("Triggered");
-    setSearchedData(e.target.value.toLowerCase());
     setfilterData(
-      data.filter((value) => value.name.toLowerCase().includes(searchedData))
+      data.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()))
     );
     if (e.target.value == "") {
       setfilterData(data);
@@ -29,7 +26,7 @@ const App = () => {
 
   return (
     <MainContainer>
-      <Navbar searchFood={searchFood} />
+      <Navbar searchFood={searchFood} setfilterData={setfilterData} data={data} />
       <Hero filterdata={filterdata} />
     </MainContainer>
   );

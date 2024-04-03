@@ -1,0 +1,81 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh;
+  box-shadow: 5px 5px 10px gray;
+}
+.navbar_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4vw;
+}
+.navbar_logo img {
+  width: 5vw;
+  height: 10vh;
+}
+.navbar_logo p {
+  font-size: 2vw;
+  font-weight: 600;
+}
+.navbar_menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #515155;
+}
+.navbar_menu hr {
+  width: 80%;
+  margin: auto;
+  height: 0.5vh;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1vh;
+}
+.navbar_menu ul li{
+ cursor: pointer;
+}
+.navbar_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.navbar_cart button {
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbar_cart button:active {
+  background-color: lightgray;
+  transition: 0.2s linear;
+}
+.navbar_cart img {
+  width: 3.5vw;
+}
+.card_count{
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4vh;
+  margin-left: -3vh;
+  border-radius: 11px;
+  background-color: red;
+  color: white;
+  font-size: 1.5vw;
+}

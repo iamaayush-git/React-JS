@@ -1,0 +1,56 @@
+.hero{
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+}
+.hero_left{
+    padding: 0 4vw;
+    text-align: left;
+    margin: auto;
+    flex: 1;
+}
+.hero_left h3{
+    font-size: 2vw;
+    font-weight: 600;
+}
+.hand_icon{
+    display: flex;
+   justify-content: left;
+    align-items: center;
+    margin-top: 1.5vh;
+}
+.hand_icon img{
+    width: 5vw;
+}
+.hand_icon p, .collection_for_Everyone{
+    font-size: 5vw;
+    line-height: 13vh;
+    font-weight: 700;
+}
+.latestCollection_btn button{
+    margin-top: 2vh;
+    padding: 2vh 1vw;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.latestCollection_btn button:active{
+    background-color: lightgray;
+  transition: 0.2s linear;
+}
+.hero_right img{
+    width: 35vw;
+}
+.hero_right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -5,6 +5,7 @@
   align-items: center;
   padding: 5vh;
   box-shadow: 5px 5px 10px gray;
+  background-color: white;
 }
 .navbar_logo {
   display: flex;
@@ -25,7 +26,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 1vw;
+  gap: 1.6vw;
   font-size: 1.5vw;
   font-weight: 700;
   color: #515155;

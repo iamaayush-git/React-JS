@@ -1,0 +1,28 @@
+.popular{
+    width: 100%;
+    padding-top:18vh;
+    /* background-color: rgb(222, 222, 222); */
+}
+.popular h2{
+    text-align: center;
+    font-size: 4vw;
+    text-transform: capitalize;
+    
+}
+.item_component{
+    width: 90%;
+    margin: auto;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+}
+hr{
+    height: 1vh;
+    width: 25%;
+    margin: auto;
+    background-color: black;
+    margin-top: 2vh;
+}

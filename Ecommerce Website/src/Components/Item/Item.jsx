@@ -1,7 +1,6 @@
 import "./Item.css"
 
 function Item({name,old_price,new_price,image}){
-    console.log(image);
     return(
         <>
         <div className="item">

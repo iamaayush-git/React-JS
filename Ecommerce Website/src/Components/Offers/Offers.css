@@ -1,0 +1,39 @@
+.offer_container {
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 239, 239);
+  margin-top: 30vh;
+  padding: 0px 5vw;
+}
+.offer_left {
+  flex: 1;
+}
+.offer_left h1 {
+  font-size: 5vw;
+}
+.offer_left p {
+  font-size: 2vw;
+}
+.offer_left button {
+  margin-top: 5vh;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.offer_right img{
+    width: 58%;
+}
+.offer_right{
+    text-align: center;
+    flex: 1;
+}

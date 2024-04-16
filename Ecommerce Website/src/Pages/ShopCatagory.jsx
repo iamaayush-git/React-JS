@@ -1,10 +1,13 @@
-
-function ShopCatagory(){
+import { useContext } from "react";
+import { shopContext } from "../Context/ShopContext";
+function ShopCatagory(props){
+    const {all_product} = useContext(shopContext);
+    console.log(all_product);
     return(
         <>
-        <h2>This is shop Catagory</h2>
+       
         
         </>
     )
-}
+}   
 export default ShopCatagory;

@@ -1,0 +1,57 @@
+.loginSignupMain {
+  /* height: 80vh; */
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10vh;
+  background-color: aliceblue;
+ padding: 5vh 2vw;
+ border-radius: 20px;
+}
+.signup{
+    font-size: 2.7vw;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputField input {
+  width: 50%;
+  height: 9vh;
+  margin-top: 5vh;
+  font-size: 1.5vw;
+  padding: 0.5vh 1vw;
+}
+.continue_btn {
+  width: 50%;
+  height: 7vh;
+  margin-top: 5vh;
+  padding: 1vh 1vw;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.continue_btn:active {
+  background-color: lightgray;
+  transition: 0.2s linear;
+}
+footer p{
+    font-size: 1.5vw;
+    margin-top: 5vh;
+}
+footer p span{
+    color: rgb(219, 4, 4);
+}
+#check{
+    font-size: 1.5vw;
+    margin-top: 5vh;
+}

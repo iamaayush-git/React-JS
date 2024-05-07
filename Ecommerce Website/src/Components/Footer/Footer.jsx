@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <hr className="footer_hr" />
         <div className="footer_footer">
-          <p>Copyright @ 2023 - All Right Reserved</p>
+          <p>Copyright @ 2023 - All Right Reserved hi</p>
         </div>
       </div>
     </>

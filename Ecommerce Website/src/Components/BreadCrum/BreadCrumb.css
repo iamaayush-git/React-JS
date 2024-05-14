@@ -1,0 +1,13 @@
+/* Breadcrumb.css */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+  
+  .breadcrumb span.separator {
+    margin: 0 5px;
+    color: #999;
+  }
+  

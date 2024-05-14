@@ -13,7 +13,9 @@ function NewCollection(){
                         name={value.name}
                         image={value.image}
                         old_price={value.old_price}
-                        new_price={value.new_price}/>
+                        new_price={value.new_price}
+                        product_id = {value.id}
+                        />
                     })
                 }
             </div>

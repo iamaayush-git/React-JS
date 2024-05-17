@@ -3,8 +3,9 @@ import { shopContext } from "../Context/ShopContext";
 import { useParams } from "react-router-dom";
 import Item from "../Components/Item/Item";
 import Breadcrumb from "../Components/BreadCrum/BreadCrumb";
-import './CSS/Product.css'
+import "./CSS/Product.css";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
+import RelatedProduct from "../Components/RelatedProduct/RelatedProduct";
 
 function Product() {
   let allProduct = useContext(shopContext);
@@ -15,10 +16,11 @@ function Product() {
   console.log(product);
   return (
     <>
-    <div className="product_main">
-      <Breadcrumb items={items} />
-      <ProductDisplay product={product}/>
-    </div>
+      <div className="product_main">
+        <Breadcrumb items={items} />
+        <ProductDisplay product={product} />
+        <RelatedProduct />
+      </div>
     </>
   );
 }

@@ -38,21 +38,23 @@ function ProductDisplay({ product }) {
         <div className="productdisplayright_size">
           <h2>Select Size</h2>
           <div className="product_sizes">
-          <div>S</div>
-          <div>M</div>
-          <div>L</div>
-          <div>XL</div>
-          <div>XXL</div>
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
           </div>
-        </div>  
-        <button>Add To Cart</button>
-        <div className="productdisplayright_category">
-          <span>Catagory : </span>
-          <span>Women, T-Shirt, Crop Top</span>
         </div>
+        <button className="productdisplayright_btn">Add To Cart</button>
         <div className="productdisplayright_category">
-          <span>Tags : </span>
-          <span>Modern, Latest</span>
+          <div>
+            <span>Catagory : </span>
+            <span>Women, T-Shirt, Crop Top</span>
+          </div>
+          <div>
+            <span>Tags : </span>
+            <span>Modern, Latest</span>
+          </div>
         </div>
       </div>
     </div>

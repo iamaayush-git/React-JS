@@ -1,0 +1,21 @@
+.relatedproduct_main{
+    margin-top: 30vh;
+}
+.relatedproduct_main h2{
+    text-align: center;
+    font-size: 4vw;
+    text-transform: capitalize;
+}
+.relatedproduct_main hr{
+    height: 1vh;
+    width: 25%;
+    margin: auto;
+    background-color: black;
+    margin-top: 2vh;
+}
+.relatedproduct_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 5vh;
+}

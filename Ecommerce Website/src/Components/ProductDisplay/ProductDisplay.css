@@ -1,95 +1,119 @@
-.productDisplay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20vh;
-    gap: 2vw;
+.productDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  gap: 2vw;
 }
-.productdisplay_left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+.productdisplay_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
-.productdisplayimage_list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+.productdisplayimage_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
-.productdisplayimage_list img{
-    height: 25vh;
-    width: 12vw;
+.productdisplayimage_list img {
+  height: 25vh;
+  width: 12vw;
 }
-.productdisplaymain_img{
-    height: 100%;
-    width: 33vw;
+.productdisplaymain_img {
+  height: 100%;
+  width: 33vw;
 }
-.productdisplay_img{
-    height: 100%;
+.productdisplay_img {
+  height: 100%;
 }
-.productdisplay_right{
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-
+.productdisplay_right {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
-.productdisplay_right_star{
-    display: flex;
-    justify-content: center;
-    gap: 1vw;
-    align-items: center;
+.productdisplay_right_star {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  align-items: center;
 }
-.starImages{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .4vw;
+.starImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4vw;
 }
-.productdisplay_right h1{
-    font-size: 2.3vw;
+.productdisplay_right h1 {
+  font-size: 2.3vw;
 }
-.productdisplayright_prices{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    font-size: 1.8vw;
-    font-weight: 900;
-    margin-top: 3vh;
+.productdisplayright_prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1.8vw;
+  font-weight: 900;
+  margin-top: 3vh;
 }
-.productdisplayright_newprice{
-    color: red;
+.productdisplayright_newprice {
+  color: red;
 }
-.productdisplayright_oldprice{
-    color: grey;
-    text-decoration: line-through;
+.productdisplayright_oldprice {
+  color: grey;
+  text-decoration: line-through;
 }
-.productdisplayright_size h2{
-    color: grey;
+.productdisplayright_size h2 {
+  color: grey;
 }
-.productdisplayright_size{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2vh;
-    margin-top: 5vh;
+.productdisplayright_size {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vh;
+  margin-top: 5vh;
 }
-.product_sizes{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 25vw;
+.product_sizes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+  font-size: 1.5vw;
+}
+.product_sizes div {
+  width: 3.9vw;
+  padding: 1vh 1vw;
+  text-align: center;
+  box-shadow: 2px 4px 10px grey;
+  background-color: rgb(240, 235, 235);
+  cursor: pointer;
+}
+.productdisplayright_btn {
+  margin-top: 5vh;
+  padding: 1.5vh 1vw;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.productdisplayright_category span:nth-child(1), span:nth-child(3){
+    font-weight: bold;
     font-size: 1.5vw;
 }
-.product_sizes div{
-    width: 3.9vw;
-    padding: 1vh 1vw;
-    text-align: center;
-    box-shadow: 2px 4px 10px grey;
-    background-color: rgb(240, 235, 235);
-    cursor: pointer;
+.productdisplayright_category span:nth-child(2), span:nth-child(4){
+    font-size: 1.5vw;
+}
+.productdisplayright_category{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

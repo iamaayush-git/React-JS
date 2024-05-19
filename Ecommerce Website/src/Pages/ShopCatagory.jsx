@@ -3,12 +3,12 @@ import { shopContext } from "../Context/ShopContext";
 import Item from "../Components/Item/Item";
 import "./CSS/ShopCatagory.css";
 function ShopCatagory(props) {
-  const data = useContext(shopContext);
+  const {all_product} = useContext(shopContext);
   return (
     <div className="shop_catagory">
       <img src={props.banner} alt="" />
       <div className="shop_item">
-        {data.map((item, i) => {
+        {all_product.map((item, i) => {
           if (props.category == item.category) {
             return (
               <Item

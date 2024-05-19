@@ -8,12 +8,10 @@ import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 import RelatedProduct from "../Components/RelatedProduct/RelatedProduct";
 
 function Product() {
-  let allProduct = useContext(shopContext);
+  let {all_product} = useContext(shopContext);
   let { productId } = useParams();
-  console.log(productId);
-  let product = allProduct.find((e) => e.id === Number(productId));
+  let product = all_product.find((e) => e.id === Number(productId));
   const items = ["Home", "Products", "Category", "Current Page", product.name];
-  console.log(product);
   return (
     <>
       <div className="product_main">

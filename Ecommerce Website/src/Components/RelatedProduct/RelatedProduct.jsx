@@ -2,7 +2,6 @@ import Item from "../Item/Item";
 import "./RelatedProduct.css";
 import data from "../assets/data.js";
 function RelatedProduct() {
-  console.log(data);
   return (
     <div className="relatedproduct_main">
       <h2>Related Product</h2>

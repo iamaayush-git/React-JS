@@ -1,0 +1,114 @@
+.cartitem-main {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+}
+.cartitem-heading {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 1vw;
+  font-size: 1.8vw;
+}
+.dividor {
+  height: 0.3vh;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  /* margin: auto; */
+}
+.cartitem-product {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  gap: 1vw;
+  align-items: center;
+  text-align: center;
+}
+.cartitem-product img {
+  width: 5vw;
+}
+.title {
+  font-size: 1vw;
+}
+.removeproduct {
+  cursor: pointer;
+}
+.carditem-down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.cartitem-totaloption {
+  height: 60vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cartitem-totaloption h1 {
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+}
+.cartitem-subtotal,
+.cartitem-total,
+.cartitem-shippingfee {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divider {
+  width: 100%;
+  height: 0.4vh;
+  background-color: gray;
+}
+.cartitem-total {
+  font-weight: bold;
+}
+.checkout {
+  height: 8vh;
+  width: 18vw;
+  background-color: red;
+  color: white;
+  margin-top: 7vh;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5vw;
+  margin: auto;
+}
+.cartitem-promocode p{
+  font-size: 1.5vw;
+}
+.cartitem-inputandbtn{
+  width: 30vw;
+  margin-top: 1vh;
+  padding-left: 5vw;
+  height: 8vh;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+
+}
+.cartitem-inputandbtn input{
+  border: none;
+  outline: none;
+  background:transparent;
+  font-size: 1.5vw;
+}
+.cartitem-promocode button{
+  border: none;
+  outline: none;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  width: 35%;
+  font-size: 1.5vw;
+  font-weight: bold;
+}

@@ -1,9 +1,11 @@
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 import cart from "../assets/cart_icon.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { shopContext } from "../../Context/ShopContext";
 function Navbar() {
+  let { getTotalItems } = useContext(shopContext);
   const [menuSelect, setMenuSelect] = useState(0);
   let menuList = [
     {
@@ -55,7 +57,7 @@ function Navbar() {
           {" "}
           <img src={cart} alt="" />
         </Link>
-        <div className="card_count">0</div>
+        <div className="card_count">{getTotalItems()}</div>
       </div>
     </div>
   );

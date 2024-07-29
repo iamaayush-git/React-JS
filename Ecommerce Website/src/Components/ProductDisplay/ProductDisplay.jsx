@@ -4,12 +4,20 @@ import star_dull from "../assets/star_dull_icon.png";
 import { useContext } from "react";
 import { shopContext } from "../../Context/ShopContext";
 function ProductDisplay({ product }) {
-  let { addToCart, removeFromCart } = useContext(shopContext);
+  let { addToCart,setShowToast } = useContext(shopContext);
+  
+  const triggerToast = () => {
+    addToCart(product.id)
+    setShowToast(true);
+    setTimeout(() => {
+        setShowToast(false);
+    }, 3000); // Hide toast after 3 seconds
+};
   return (
     <div className="productDisplay">
       <div className="productdisplay_left">
         <div className="productdisplayimage_list">
-          <img src={product.image} alt="" />
+          <img src={product.image} alt="" /> 
           <img src={product.image} alt="" />
           <img src={product.image} alt="" />
         </div>
@@ -48,7 +56,7 @@ function ProductDisplay({ product }) {
           </div>
         </div>
         <button
-          onClick={() => addToCart(product.id)}
+          onClick={triggerToast}
           className="productdisplayright_btn"
         >
           Add To Cart

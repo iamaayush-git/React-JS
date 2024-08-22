@@ -3,7 +3,7 @@ import "./CartItem.css";
 import { shopContext } from "../../Context/ShopContext";
 
 function CartItem() {
-  let { all_product, cartItems, getTotalAmout, removeFromCart,setCartNumber } =
+  let { all_product, cartItems, getTotalAmout, removeFromCart, setCartNumber } =
     useContext(shopContext);
   return (
     <>
@@ -19,22 +19,20 @@ function CartItem() {
         <hr className="dividor" />
         <div className="cartitem-product-main">
           {all_product.map((item, index) => {
-            if (cartItems[index+1] >= 1) {
-              console.log(item);
-              console.log(index);
+            if (cartItems[index + 1] >= 1) {
               return (
                 <>
                   <div className="cartitem-product">
                     <img src={item.image} alt="" />
                     <p className="title">{item.name}</p>
                     <div className="price">{item.new_price}</div>
-                    <div className="quantity">{cartItems[index+1]}</div>
+                    <div className="quantity">{cartItems[index + 1]}</div>
                     <div className="total">
-                      {item.new_price * cartItems[index+1]}
+                      {item.new_price * cartItems[index + 1]}
                     </div>
                     <h4
                       className="removeproduct"
-                      onClick={() => removeFromCart(index+1)}
+                      onClick={() => removeFromCart(index + 1)}
                     >
                       X
                     </h4>
@@ -52,8 +50,8 @@ function CartItem() {
             <div className="cartitem-subtotal">
               <p>Sub Total</p>
               <p>{getTotalAmout()}</p>
-            </div> 
-            <hr  className="divider"/>
+            </div>
+            <hr className="divider" />
             <div className="cartitem-shippingfee">
               <p>Shipping Fee</p>
               <p>Free</p>
@@ -68,15 +66,12 @@ function CartItem() {
           <div className="cartitem-promocode">
             <p>If you have promo code, Enter it here</p>
             <div className="cartitem-inputandbtn">
-            <input type="text" placeholder="Prome Code"/>
-            <button>Submit</button>
+              <input type="text" placeholder="Prome Code" />
+              <button>Submit</button>
             </div>
           </div>
         </div>
-
-
       </div>
-
     </>
   );
 }
